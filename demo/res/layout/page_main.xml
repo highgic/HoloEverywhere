@@ -1,32 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:background="#ffff"
-              android:orientation="vertical" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffff"
+    android:orientation="vertical" >
 
     <FrameLayout
-            android:id="@+id/layout_container"
-            android:layout_width="fill_parent"
-            android:layout_height="0dip"
-            android:layout_weight="1" >
+        android:id="@+id/layout_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
     </FrameLayout>
 
     <RadioGroup
-            android:id="@+id/rg_nav"
-            android:layout_width="fill_parent"
-            android:layout_height="44dip"
-            android:orientation="horizontal" >
+        android:id="@+id/rg_nav"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:orientation="horizontal"
+        > 
 
         <RadioButton
-                android:id="@+id/rb_nav_btn1"
-                style="@style/nav_item"
-                android:text="Tab1" />
+            android:id="@+id/rb_nav_btn1"
+            style="@style/home_bottom_nav_local_02"
+            android:drawableTop="@drawable/indexpage_bottomnav_itemupdate_selector"
+            android:text="常用功能" />
 
         <RadioButton
-                android:id="@+id/rb_nav_btn2"
-                style="@style/nav_item"
-                android:text="Tab2" />
+            android:id="@+id/rb_nav_btn2"
+            style="@style/home_bottom_nav_local_02"
+            android:drawableTop="@drawable/indexpage_bottomnav_itemsystem_selector"
+            android:text="解决方案" />
+        
+        
+        <RadioButton
+            android:id="@+id/rb_nav_btn3"
+            style="@style/home_bottom_nav_local_02"
+            android:drawableTop="@drawable/indexpage_bottomnav_itemlocks_selector"
+            android:text="案例展示" />
+        
+          <RadioButton
+            android:id="@+id/rb_nav_btn4"
+            style="@style/home_bottom_nav_local_02"
+            android:drawableTop="@drawable/indexpage_bottomnav_itemdata_selector"
+            android:text="行业资讯" />
+          
+        <!--    <RadioButton
+            android:id="@+id/rb_nav_btn5"
+            style="@style/home_bottom_nav_local_02"
+            android:drawableTop="@drawable/indexpage_bottomnav_itemgallery"
+            android:text="关于" /> -->
     </RadioGroup>
 
 </LinearLayout>
